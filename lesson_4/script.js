@@ -326,12 +326,14 @@
 
 // 13. * Напишите стрелочную функцию, которая будет возвращать true если строка является палиндромом и false в противном случае.
 
-// const isPalindrome = (string) => {
-//     const reversedString = string.split("").reverse().join(""); // ААААААААА КАЙФ!!!!!!!
-//     return string === reversedString;
-// }
+const isPalindrome = (string) => {
+    const reversedString = string.split("").reverse().join(""); // ААААААААА КАЙФ!!!!!!!
+    if (string === reversedString) {
+        return true;
+    }
+}
 
-// console.log(isPalindrome('довод')); //true
+console.log(isPalindrome('довод')); //true
 
 
 
