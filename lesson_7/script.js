@@ -96,7 +96,7 @@
 
 //8. Реализовать таймер-функцию используя замыкания. Функция принимает два аргумента начальное значение и значение завершения. Таймер движется назад.При достижении точки завершения в консоль выводится значение таймера и сообщение о завершении работы таймера.
 
-function setTimeout(start, end) {
+function createTimer(start, end) {
     let count = start;
 
     const step = setInterval(() => {
@@ -110,5 +110,5 @@ function setTimeout(start, end) {
     return step;
 }
 
-let timeout = setTimeout(100,90);
+createTimer(100,90);
 
